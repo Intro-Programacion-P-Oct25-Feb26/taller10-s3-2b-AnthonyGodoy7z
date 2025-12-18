@@ -16,27 +16,30 @@ public class Problema02 {
             {5, 12, 35, 40},
             {8, 15, 33, 38},
             {6, 10, 30, 36}};
-        int[] menores = new int[3];
         int[] mayores = new int[3];
-        int suma = 0;
+        int menores = 0;
         int mayor;
         String mensaje = "Listado de edades de las familias\n";
         String mayorMsg = "";
         for (int i = 0; i < edades.length; i++) {
             for (int j = 0; j < edades[i].length; j++) {
                 if (edades[i][j] < 18) {
-                    suma = suma + 1;
+                    menores = menores + 1;
                 }else{
                     mayores[i] = mayores[i] + 1;              
                 }
 
             }
         }
+        
+        mensaje = String.format("%sMenores de edad totales de la familia: %d\n", 
+                mensaje, menores);
 
-        for (int e = 0; e < edades.length; e++) {
-           
+        for (int e = 0; e < mayores.length; e++) {
+           mensaje = String.format("%sMayores de edad en la familia %d: %d\n", 
+                mensaje, e+1, mayores[e]);
 
                 }
-
+                System.out.printf("%s\n", mensaje);
             }
 }
