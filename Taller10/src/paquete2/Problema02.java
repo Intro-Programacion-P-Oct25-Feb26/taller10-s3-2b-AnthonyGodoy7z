@@ -10,5 +10,33 @@ package paquete2;
  * @author reroes
  */
 public class Problema02 {
-    
+
+    public static void main(String[] args) {
+        int[][] edades = {
+            {5, 12, 35, 40},
+            {8, 15, 33, 38},
+            {6, 10, 30, 36}};
+        int[] menores = new int[3];
+        int[] mayores = new int[3];
+        int suma = 0;
+        int mayor;
+        String mensaje = "Listado de edades de las familias\n";
+        String mayorMsg = "";
+        for (int i = 0; i < edades.length; i++) {
+            for (int j = 0; j < edades[i].length; j++) {
+                if (edades[i][j] < 18) {
+                    suma = suma + 1;
+                }else{
+                    mayores[i] = mayores[i] + 1;              
+                }
+
+            }
+        }
+
+        for (int e = 0; e < edades.length; e++) {
+           
+
+                }
+
+            }
 }
