@@ -24,7 +24,8 @@ public class Problema01 {
         String[] estudiantes = {"Ana", "Luis", "Carlos", "María"};
         int[] diasAsis = new int[5];
         int suma;
-        String reporte = "Listado de la asistencia de los estudiantes\n";
+        String reporte = "Listado de la asistencia de los estudiantes\n"
+                + "-------------------------------------------------\n";
         String mensajeAsis = "";
 
         for (int i = 0; i < asistencia.length; i++) {
@@ -48,7 +49,8 @@ public class Problema01 {
             }   
         }
 
-        reporte = String.format("%s\nEstudiantes con asistencia completa\n"
+        reporte = String.format("%s-----------------------------------\n"
+                + "Estudiantes con asistencia completa\n"
                 + "%s", reporte, mensajeAsis);
         
         System.out.printf(reporte);

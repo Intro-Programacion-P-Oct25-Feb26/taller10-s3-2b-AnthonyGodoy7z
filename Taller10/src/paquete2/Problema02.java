@@ -18,7 +18,8 @@ public class Problema02 {
             {6, 10, 30, 36}};
         int[] mayores = new int[3];
         int menores = 0;
-        String mensaje = "Listado de edades de las familias\n";
+        String mensaje = "Listado de edades de las familias\n"
+                + "----------------------------------------\n";
         for (int i = 0; i < edades.length; i++) {
             for (int j = 0; j < edades[i].length; j++) {
                 if (edades[i][j] < 18) {

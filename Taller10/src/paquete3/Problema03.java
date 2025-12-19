@@ -39,9 +39,11 @@ public class Problema03 {
                         msgFunc, e + 1, fallo[e]);
             }
         }
-        System.out.printf("Listado de sensores de seguridad\n\n"
-                + "%s\n\n"
-                + "ZONAS CON FALLOS\n\n%s\n", msgFunc, msgFallo);
+        System.out.printf("Listado de sensores de seguridad\n"
+                + "%s\n"
+                + "-----------------------------------\n"
+                + "ZONAS CON FALLOS\n"
+                + "%s\n", msgFunc, msgFallo);
     }
 
 }
